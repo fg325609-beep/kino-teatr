@@ -1,0 +1,253 @@
+:root {< shrift > </ shrift >
+  --bg: #070A12 ;< shrift ></ shrift >
+  --panel: #0D1324 ;< shrift ></ shrift >
+  --panel2: #0A1020 ;< shrift ></ shrift >
+  --matn: #EAF0FF ;< shrift ></ shrift >
+  --o'chirilgan: #A9B6D6 ; < font > </font>
+  --qator: #243155 ;< shrift ></ shrift >
+  --brend: #7C5CFF ;< shrift ></ shrift >
+  --brand2: #06B6D4 ;< shrift ></ shrift >
+  --ok: #22C55E ;< shrift ></ shrift >
+  --soya: 0  22px  60px  rgba ( 0 , 0 , 0 ,. 45 ); < font > </font>
+  --radius: 18px ;< shrift ></ shrift >
+}< shrift > </ shrift >
+< shrift > </ shrift >
+*{ box-sizing :border-box; }< font > </font> html ,
+ body { height : 100 % ; }< font ></font> body {
+ < font > </font> margin
+   : 0 ; < font ></font> font -
+   family : ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;< font></font> color: var (--text);< font></font> background : <font> </font> radial - gradient ( 900px 600px 18
+   % 10
+     % da , rgba ( 124 , 92
+   , 255 , .28 ) , shaffof 55 % ) , <font> </font>
+     radial-gradient ( 900px 600px 82 % 15% da , rgba ( 6 , 182 , 212 , .20 ), shaffof 55% ),<font></font>
+     linear-gradient ( 180grad , #050713 , var (--bg ) );< font > </font> overflow-x :
+   hidden;< font > </font>    
+}< shrift > </ shrift >
+< font ></font> a {
+ color : inherit; text-decoration :none; }< font > </font> .container {
+ max -width : 1100px ; margin : 0 auto ; padding : 22px ; } < font > </font>
+< font ></font> .nav {
+ < font ></font> position : sticky;< font ></font> top : 0 ; <
+   font > </font> z -
+   index : 10 ;< font > </font> </font>
+   </ Fon ...
+  backdrop - filter : xiralashtirish ( 14px ) ; <shrift> </shrift> fon
+   : rgba ( 5 , 7 , 19 , .62 ) ; <shrift> </shrift> border -
+   bottom : 1px qattiq rgba ( 36 , 49 , 85 , .55 ) ; <shrift> </shrift>
+}< font ></font> .nav
+ -inner {< font ></font> display : flex;< font ></font> align -
+   items : center;< font > </font> justify
+   -content :space-between ; <
+   font > </font>
+  bo'shliq: 14px ;< shrift ></ shrift >}
+   
+< font ></font> .brand {
+ < font > </font> display : flex;< font > </font> align -
+   items :center;< font > </font>
+  bo'sh joy: 10px ;< font > </font> font
+   -weight : 900 ; < font ></font> harf oralig'i : .2px ; <
+   font > </font>
+}< font >
+ </font> .logo {< font ></font> kengligi :
+   34px ; < font > </font> balandlik : 34px ; < font > </font>
+   border-radius : 12px ;< font > </font> fon
+   : konus-gradient (
+   240 darajadan , var ( --brand), var ( --brand2), var (--ok), var (--brand ) );< font > </font> box -
+   shadow : 0 10px 30px rgba ( 124 , 92 , 255 , .22 ); < font > </font>   
+}< shrift > </ shrift >
+< font ></font> .menu {
+ < font > </font> display :
+   flex ; < font > </font>
+  gap: 16px ;< font > </font> align -
+   items :center;< font ></font> color :
+   var ( --muted);< font
+   > </font> font - weight
+   : 700 ; < font > </font> font-size : 14px ; < font > </font>}
+ 
+< font ></font> .menu a
+ { shaffoflik : .92 ; }< font ></font> .menu a  : hover { color : var (--text); } < font > </font> 
+< font ></font> .btn {< font ></font> display :
+   inline -flex;< font >
+ </font> align-items :center ;< font ></font> justify -
+   content
+   : center;< font
+   > </font> padding :
+   12px 16px ; < font > </font> border-radius : 14px ; < font></font> border : 0 ; < font > </font> background : linear - gradient ( 135deg , rgba
+   ( 124 , 92 , 255 , .95 ) , rgba ( 6 , 182 , 212 , .9 ) );< font> </font> color :
+   white;< font > </font>
+   font -
+   weight : 900 ;< font> </font> cursor
+   : pointer ;< font > </font> box -
+   shadow : 0 18px 45px rgba ( 124 , 92 , 255 ,. 18 );< font ></font> o'tish : transform. 16s osonlik, filtr. 16s osonlik ; <
+   font > </font>    
+}< font >
+ </font> .btn :hover { transform : translateY (- 1px ); filtr : yorqinlik ( 1.06 ) ; }< font ></font> .btn .secondary
+ { < font >
+   </font> fon : shaffof; < font > </font> chegara : 1px qattiq rgba ( 169 , 182 , 214 ,. 22 );< font> </font> box
+   - shadow :none;< font > </font> color : var ( --text ) ; <
+   font > </font>
+  
+}< shrift > </ shrift >
+< font ></font> .card {
+ < font ></font> background :
+   linear -gradient ( 180deg , rgba ( 13 , 19 , 36 , .82 ) , rgba ( 13 , 19 , 36 , .52 ));< font> </font> border
+   : 1px qattiq rgba ( 36 , 49 , 85 , .65 ) ; < font > </font> border -radius : var (--radius);< font > </font> padding : 16px ;< font > </font> box
+   - shadow :
+   var ( --shadow);< font > </font> position :relative;< font > </font>
+   overflow
+   :
+   hidden ; < font > </font>
+}< font ></font> .card :
+ before{<font> </font>
+  tarkib: " " ;< font ></font> pozitsiya :
+   absolute; < font > </font>
+  qo'shimcha:- 2px ;< font ></font> fon :
+   <font> </font>
+     radial-gradient ( 520px  240px 30 %  10% da , rgba ( 124 , 92 , 255 , .20 ), shaffof 60% ),<font></font>
+     radial-gradient ( 520px  240px 75 %  30% da , rgba ( 6 , 182 , 212 , .16 ), shaffof 60% );< font ></font> pointer -events :
+   none;< font > </font>
+}< font ></font> .card >
+ *{ pozitsiya :relative; } < font > </font>
+< font ></font> .hero {
+ < font > </font> padding :
+   46px 0  18px  ; < font > </font> display : grid ; <
+   font > </font>
+  grid-template- ustunlari : 1.2 fr . 8 fr;< font > </font>
+  bo'shliq: 16px ;< font ></font> align - items :
+   stretch;< font > </font>}
+   
+< font ></font> .pill {
+ < font > </font> display : inline-flex; < font > </font>
+  gap: 10px ;< font ></font> align -
+   items :center;< font ></font> border :
+   1px qattiq rgba ( 169 , 182 , 214 , .22 ) ;< font
+   > </font> padding : 8px 12px ; < font> </font> border
+   - radius :
+   999px ; < font ></font> fon : rgba ( 13 , 19 , 36 , .55 ) ; < font > </font> color
+   : var (--muted); < font ></font>
+   font -weight : 800 ;< font > </font> font
+   - size : 13px ; < font > </font> 
+}< font ></font> .dot
+ {< font ></font> kengligi :
+   8px ; < font ></font> balandlik : 8px
+   ; < font > </font> border -radius :
+   999px ; < font >
+   </font> background : var ( --ok ) ;< font > </font> box -shadow : 0 0 0 6px rgba ( 34 , 197 , 94 ,. 14 ) ; < font >
+   </font>    
+}< font ></font> h1 {
+ < font > </font> chegara :
+   14px 0 10px ; < font > </font> font
+   -size : clamp ( 32px , 4.8vw , 54px );< font > </font> line-height : 1.05 ; < font >
+   </font> harf
+   oralig'i : - 1px ; < font > </font>  } 
+< font ></font> .lead {
+ < font ></font> chegara : 0 ; < font ></font> color :
+   var ( --muted);< font > </font> line - height : 1.7 ;
+   < font> </font> max -
+   width : 60ch ; < font >
+   </font>
+}< shrift > </ shrift >
+< font ></font> .grid {
+ < font > </font> display :
+   grid ; < font > </font>
+  grid-template- columns : repeat ( 4 , 1 fr );< font > </font>
+  bo'shliq: 12px ;< shrift ></ shrift >
+}< font ></font> .section { padding : 18px  0 ; }< font ></font> .section -
+ title {< font ></font> display : flex;< font > </font>
+ align
+   - items :center;< font></font> justify - content : space
+   -between; <
+   font > </font>
+  bo'shliq: 12px ; < font > </shrift> chegara : 8px  0
+   12px ; < font  > </shrift>
+}< font
+   > </font>
+ .section - title  h2 {< font ></font> chegara : 0 ; < font > </font> font -
+   size : 18px ;< font > </font> harf oralig'i : .1px ; < font >
+   </font>
+}< font></font> .small { color : var
+ ( --muted ) ; shrift og'irligi : 800 ; shrift o'lchami : 13px ; } < font > </font>
+< font ></font> .movie {
+ < font > </font>
+   chegara : 1px qattiq rgba ( 36 , 49 , 85 , .65 ) ;< font ></font> chegara radiusi : 16px ;< font > </font>
+   overflow
+   : hidden ; < font > </font> fon
+   : rgba ( 5 , 7 , 19 , .18 ) ; < font > </font>
+}< font ></font> .poster {
+ < font ></font> balandlik :
+   170px ; < font > </font> fon
+   : <font></font>
+     radial -gradient ( 240px 120px 30 % 20% da , rgba ( 124 , 92 , 255 , .35 ), shaffof 60% ),<font></font>
+     radial-gradient ( 240px 120px 70% 30 % da , rgba ( 6 , 182 , 212 , .25 ), shaffof 60% ),<font></font>
+     chiziqli-gradient ( 180 daraja , rgba ( 255 , 255 , 255 , .08 ), rgba ( 255 , 255 , 255 , 0 ));< font ></ font >    
+}< font ></font> .movie -
+ body { padding : 12px ; }< font
+ > </font> .movie -title {
+   font -weight :
+   950 ; }< font > </font> .meta {< font ></font> margin -top : 6px
+ ; < font > </font> display : flex;< font > </font>
+  gap: 8px ;< font > </font> flex
+   -wrap :wrap;< font ></font> color :
+   var ( --muted);< font
+   > </font> font - weight
+   : 800 ; < font > </font> font-size : 12px ; < font > </font>}
+   
+< font ></font> .badge {
+ < font ></font> padding :
+   6px 8px ; < font > </font> border -radius : 999px ; < font ></font> border
+   : 1px qattiq rgba ( 169 , 182 , 214 , .22 ) ; < font > </font> fon :
+   rgba ( 13 , 19 , 36 , .55 ) ; < font > </font> 
+}< shrift > </ shrift >
+< font ></font> .asboblar paneli
+ { < font ></font> display :
+   flex ; < font > </font>
+  bo'shliq: 10px ;< font > </font> flex -wrap :
+   wrap;< font > </font>}
+   
+< font ></font> .input , select{< font > </font> padding
+   : 12px  12px ; < font ></font> border -radius : 14px ;< font > </font> border : 1px qattiq rgba (
+ 36 , 49 , 85 ,. 65 ) ; < font >
+   </font> fon : rgba ( 5 , 7 , 19 ,. 25 ) ;< font >
+   </font> color
+   : var (--text);< font > </font>
+   outline : none ; < font > </font> font
+   -weight : 800 ; < font > </font>
+}< font ></font> .input {
+ min -width : 240px ; }< font > </font> .hr
+ { balandlik : 1px ; fon : rgba ( 36 , 49 , 85 , .65 ) ; chegara : 14px 0 ; } < font > </font> 
+< font ></font> .form {
+ < font > </font> display :
+   grid ; < font > </font>bo'sh 
+  joy: 10px ;< font > </font> margin
+   -top : 12px ;< font > </font>
+}< font ></font> .help
+ {< font ></font> color :
+   var ( --muted );< font > </font> font -
+   weight : 800 ;< font > </font> font - size : 13px ; < font > </font>
+   line-height : 1.6 ; < font >
+   </font>}
+   
+< font ></font> .toast {
+ < font ></font> display :
+   none ;< font > </font> margin-top : 10px ;< font > </font> color : var ( --muted); < font> </font> font -
+   weight
+   : 900 ; < font > </font>
+}< shrift > </ shrift >
+< font ></font> .footer {
+ < font > </font> padding :
+   18px 0  30px  ; < font > </font> color :
+   var ( --muted);< font > </font> font - weight
+   : 800 ; < font> </font> font -
+   size : 13px ;< font > </font>
+}< shrift > </ shrift >
+< font ></font> @media ( max
+   -width : 920px ){< font > </font> .hero {
+ grid-template- columns : 1 fr; }< font
+   > </font> .grid {
+   grid-template- columns : repeat ( 2 , 1 fr ); }< font ></font> .menu { display : none; } < font > </font>
+}< font ></font> @media (
+ max -
+   width : 520px ){< font ></font> .grid {
+   grid -template- columns : 1 fr; }< font ></font> .input { width : 100 % ; min - width : unset; }< font > </font>
+}
