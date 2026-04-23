@@ -1,81 +1,249 @@
-<!doctype html > < font > </ font > 
-< html  lang = "uz" > < font > </ font > 
-< head > < font > </ font > 
-  < meta  charset = "utf-8" /> < font > </ font > 
-  < meta  name = "viewport"  content = " width =device- width , initial -scale=1 " Ki < font > 
-  H | Kinolar olami </ title > < font > </ font > 
-  < meta  name = "description"  content = "Trending va yangi kinolar. Qidiruv, janr, va ro'yxatdan o'tish." /> < font > </ font > 
-  < link  rel = "stylesheet"  href = "styles.css" /> < font > </ font > 
-</ head > < font > </ font > 
-< body > < font > </ font > 
-  < header  class = "nav" > < font > </ font > 
-    < div  class = "container nav-inner" > < font > </ font > 
-      < a  class = "brand"  href = "index."html" > < font > </ font > 
-        < span  class = "logo"  aria-hidden = "true" > </ span > < font > </ font > 
-        < span > KinoHub </ span> < font > </ font > 
-      </ a > < font > </ font > 
-      < nav  class = "menu"  aria-label = "Menu" > < font > </ font > 
-        < a  href = "catalog.html" > Katalog </ a > < font > </ font > 
-        < a  href = "signup.html" > Ro'yxatdan o'tish </ a > < font > </ font > 
-      </ nav > < font > </ font > 
-      < a  class = "btn"  href = "catalog.html" > Kinolarni ko'rish </ a > < font > </ font > 
-    </ div > < font > </ font > 
-  </ header > < font > </ font > 
-< font > </ font > 
-  < main  class = "container" > < font > </ font > 
-    < section  class = " hero " > < font > < 
-      /  font > < / v > 
-        font > </v> font > < div  class = "pill" > < span  class = "dot" > </ span > Har kuni yangi kino tavsiyalari </ div > < font > </ font > 
-        < h1 > Kinolarni tez toping, yoqganini saqlang </ h1 > < font > </.font > 
-        < p  class = "lead" > < font > </ font > 
-          Qidiruv, janr bo'yicha saralash, va har bir kino uchun alohida sahifa. < font > </ font > 
-          Bu demo, xoxlasangiz keyin API va admin panel bilan haqiqiy platformaga aylantirib beraman. < font > </ font > 
-        </ p > < font > </ font > 
-        < div  style = "display:flex; gap:12px; margin-top:16px; flex-wrap:wrap" > < font > </ font > 
-          < a  class = "btn"  href = "catalog.html" > Katalogga a > < font a = > > < font > 
-          < /  font > "btn ikkinchi darajali"  href = "ro'yxatdan o'tish.html" > Hisob ochildi </ a > < font > </ font > 
-        </ div > < font > </ font > 
-        < div  class = "hr" > </ div > < font > </ font > 
-        < div  class = "toolbar" > < font > </ font > 
-          < span  class = "badge" > ⚡ Tezkor foydalanuvchi interfeysi </ span > < font > </ font > 
-          < span  class = "badge" > 🔎 Qidiruv </ span > < font > </ font > 
-          < span  class = "badge" > 🎬 Tafsilotlar sahifasi </ span > < font > </ font > 
-          < span  class= "badge" > 🔐 Ro'yxatdan o'tish </span > < font > </ font > </ div > < font > </ font > < font > </ font > < div class = " card " > < font > 
-        < / font > < div style = " 
-      font - weight : 950 
-; font - size : 16px " > Bugun 
-      taqdimot < / div > < font >  < / font > < p class = " help " style = " margin - top : 8px " > < font > < / font > Eng yuqori reytingli kinolarni “ Trending ” bo'limidan ko'rasiz 
-          . < font > </ font > </ p > < font > </ font > < div class = "hr" > </ div > < font > </ font > < a class = "btn" href = "catalog.html" style = "width:100%" > Eng yaxshi kinolar </ a > < font > </ font > </ div > < font > </ font > < / section > < font > < / font > < section class = " section " > < font > < / font > < div class = "section-title " > < font > < / font > < h2 >
-         
-          
-        
-         
-           
-      
-    
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Studio | Zamonaviy saytlar va brend dizayn</title>
+  <meta name="description" content="Tez, chiroyli va konversiya beradigan saytlar. Dizayn, frontend, SEO va launch." />
 
-     
-       
-        Trenddagi </ h2 > < font > </ font > 
-        < span  class = "small" > Reyting bo'yicha </ span > < font > </ font > 
-      </ div > < font > </ font > 
-      < div  id = "trendingGrid"  class = "grid"  aria-label = "Trending grid" > </ div > < font > </ font > 
-    </ section > < font > </ font > 
-< font > </ font > 
-    < section  class = "section" > < font > </ font > 
-      < div  class = "section-title" > < font > </ font > 
-        < h2 > Yangi kinolar </ h2 > < font > </ font > 
-        < span  class = "small" > Yil bo'yicha </ span > < font > </ font > 
-      </ div > < font > </ font > 
-      < div  id = "newGrid"  class = "grid"  aria-label = "New grid" > </ div > < font > </ font > 
-    </ section > < font > </ font > 
-< shrift > </ shrift > 
-    < footer  <ai=171>class = "footer" > < font > </ font > 
-      < div  class = "hr" > </div > < font > </ font > 
-      < div > © < span  id = "year" > </ span > KinoHub. Demo frontend. </ div > < font > </ font > 
-    </ footer > < font > </ font > 
-  </ main > < font > </ font > 
-< font > </ font > 
-  < script  src = "app.js" > </ script > < font > </ font > 
-</ body > < font > </ font > 
-</ html >
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1730cc;
+      --text:#eaf0ff;
+      --muted:#a9b6d6;
+      --line:#243155;
+      --a:#7c5cff;
+      --b:#22c55e;
+      --c:#06b6d4;
+      --shadow: 0 24px 70px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 20% 10%, rgba(124,92,255,.35), transparent 55%),
+        radial-gradient(900px 600px at 80% 20%, rgba(6,182,212,.28), transparent 55%),
+        radial-gradient(900px 600px at 60% 85%, rgba(34,197,94,.22), transparent 55%),
+        linear-gradient(180deg, #070a14, var(--bg));
+      overflow-x:hidden;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(14px);
+      background: rgba(7,10,20,.55);
+      border-bottom:1px solid rgba(36,49,85,.55);
+    }
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: conic-gradient(from 220deg, var(--a), var(--c), var(--b), var(--a));
+      box-shadow: 0 10px 30px rgba(124,92,255,.25);
+    }
+    .menu{display:flex; gap:18px; align-items:center; color:var(--muted); font-weight:600; font-size:14px}
+    .menu a{opacity:.92}
+    .menu a:hover{color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(6,182,212,.9));
+      color:white; font-weight:800; border:0;
+      box-shadow: 0 18px 45px rgba(124,92,255,.22);
+      cursor:pointer;
+      transition: transform .18s ease, filter .18s ease;
+    }
+    .btn:hover{transform: translateY(-1px); filter:brightness(1.08)}
+    .btn.secondary{
+      background: transparent;
+      border:1px solid rgba(169,182,214,.25);
+      box-shadow:none;
+      color:var(--text);
+    }
+    .hero{padding:56px 0 26px}
+    .pill{
+      display:inline-flex; gap:10px; align-items:center;
+      border:1px solid rgba(169,182,214,.22);
+      padding:8px 12px; border-radius:999px;
+      background: rgba(15,23,48,.55);
+      color:var(--muted);
+      font-weight:700; font-size:13px;
+    }
+    .dot{width:8px; height:8px; border-radius:999px; background:var(--b); box-shadow:0 0 0 6px rgba(34,197,94,.14)}
+    h1{margin:18px 0 12px; font-size:clamp(34px, 5vw, 56px); line-height:1.05; letter-spacing:-1.2px;}
+    .lead{max-width:58ch; color:var(--muted); font-size:16px; line-height:1.6}
+    .hero-grid{
+      margin-top:26px;
+      display:grid; gap:18px;
+      grid-template-columns: 1.3fr .7fr;
+      align-items:stretch;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(15,23,48,.78), rgba(15,23,48,.52));
+      border:1px solid rgba(36,49,85,.65);
+      border-radius:22px;
+      padding:18px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(500px 220px at 30% 10%, rgba(124,92,255,.22), transparent 60%),
+                  radial-gradient(500px 220px at 70% 30%, rgba(6,182,212,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .card > *{position:relative}
+    .kpi{display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-top:12px}
+    .kpi .mini{
+      border:1px solid rgba(36,49,85,.65);
+      border-radius:16px;
+      padding:12px;
+      background: rgba(7,10,20,.25);
+    }
+    .num{font-size:20px; font-weight:900}
+    .lbl{font-size:12px; color:var(--muted); font-weight:700; margin-top:4px}
+    .stack{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .tag{
+      font-size:12px; font-weight:800;
+      color: rgba(234,240,255,.92);
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(169,182,214,.20);
+      background: rgba(7,10,20,.25);
+    }
+    .hr{height:1px; background: rgba(36,49,85,.65); margin:18px 0}
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns: 1fr}
+      .menu{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Nova Studio</div>
+      </div>
+      <nav class="menu" aria-label="Asosiy menyu">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <a class="btn" href="#aloqa">Bepul maslahat</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="pill"><span class="dot"></span> 7 kunda MVP landing yoki 14 kunda full sayt</div>
+      <h1>Tez, chiroyli va konversiya beradigan saytlar.</h1>
+      <p class="lead">
+        Dizayn, frontend, SEO va ishga tushirish. Biznesingiz uchun zamonaviy ko‘rinish, tez yuklanish, mobilga mos UX.
+      </p>
+
+      <div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap">
+        <a class="btn" href="#aloqa">Bog‘lanish</a>
+        <a class="btn secondary" href="#xizmatlar">Xizmatlar</a>
+      </div>
+
+      <div class="hero-grid">
+        <div class="card">
+          <div style="font-weight:900; font-size:16px">Natijaga yo‘naltirilgan dizayn</div>
+          <div style="color:var(--muted); margin-top:6px; line-height:1.6">
+            CTA, ijtimoiy isbot, aniq taklif, va tez ishlaydigan interfeys.
+          </div>
+
+          <div class="stack">
+            <span class="tag">Responsive</span>
+            <span class="tag">SEO-ready</span>
+            <span class="tag">Fast</span>
+            <span class="tag">Accessible</span>
+          </div>
+
+          <div class="kpi" aria-label="KPI">
+            <div class="mini"><div class="num" id="kpi1">0%</div><div class="lbl">Tezlik</div></div>
+            <div class="mini"><div class="num" id="kpi2">0</div><div class="lbl">Section</div></div>
+            <div class="mini"><div class="num" id="kpi3">0</div><div class="lbl">Kun</div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="font-weight:900; font-size:16px">Tez start</div>
+          <p style="margin:10px 0 0; color:var(--muted); line-height:1.6; font-size:14px">
+            3 qadam: brief, dizayn, deploy.
+          </p>
+          <div class="hr"></div>
+          <a class="btn" href="#aloqa" style="width:100%">Yozish</a>
+          <div id="toast" style="display:none; color:var(--muted); font-weight:800; margin-top:10px"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="xizmatlar" style="padding:10px 0 26px">
+      <div class="card">
+        <div style="font-weight:900; font-size:18px">Xizmatlar</div>
+        <p style="color:var(--muted); line-height:1.6; margin:10px 0 0">
+          Performance, UI/UX, SEO bazasi, va deploy yo‘riqnomasi.
+        </p>
+      </div>
+    </section>
+
+    <section id="aloqa" style="padding:10px 0 26px">
+      <div class="card">
+        <div style="font-weight:900; font-size:18px">Aloqa</div>
+        <form style="margin-top:14px; display:grid; gap:10px" onsubmit="return handleSubmit(event)">
+          <input required name="name" placeholder="Ismingiz"
+            style="padding:12px; border-radius:14px; border:1px solid rgba(36,49,85,.65); background:rgba(7,10,20,.25); color:var(--text)">
+          <input required name="contact" placeholder="Telegram yoki Email"
+            style="padding:12px; border-radius:14px; border:1px solid rgba(36,49,85,.65); background:rgba(7,10,20,.25); color:var(--text)">
+          <textarea required name="msg" rows="4" placeholder="Qanday sayt kerak?"
+            style="padding:12px; border-radius:14px; border:1px solid rgba(36,49,85,.65); background:rgba(7,10,20,.25); color:var(--text)"></textarea>
+          <button class="btn" type="submit">Yuborish</button>
+        </form>
+      </div>
+    </section>
+
+    <footer style="padding:26px 0 38px; color:var(--muted); font-size:13px">
+      <div class="hr"></div>
+      <div>© <span id="year"></span> Nova Studio. Frontend demo.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function animateNumber(el, to, suffix="", ms=900){
+      const start = performance.now();
+      const from = 0;
+      function tick(t){
+        const p = Math.min(1, (t-start)/ms);
+        const val = Math.round(from + (to-from)*p);
+        el.textContent = val + suffix;
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    animateNumber(document.getElementById("kpi1"), 95, "%");
+    animateNumber(document.getElementById("kpi2"), 12, "");
+    animateNumber(document.getElementById("kpi3"), 2, "");
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const toast = document.getElementById("toast");
+      toast.style.display = "block";
+      toast.textContent = "Qabul qilindi. (Demo) Keyin backend/API ulaymiz.";
+      setTimeout(() => toast.style.display = "none", 2600);
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
