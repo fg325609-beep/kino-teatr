@@ -9,6 +9,25 @@ const MOVIES = [
   { id:"m8", title:"Sokin Dengiz", year:2025, rating:8.0, genre:"Drama", duration:"2h 11m" }
 ];
 
+function escapeHtml(str){
+  return String(str)
+    .replaceAll("&","&")
+    .replaceAll("<","<")
+    .replaceAll(">",">")
+    .replaceAll('"',""")
+    .replaceAll("'","&#039;");
+}
+
+function qs(name){
+  const url = new URL(window.location.href);
+  return url.searchParams.get(name);
+}
+
+function initYear(){
+  const el = document.getElementById("year");
+  if(el) el.textContent = String(new Date().getFullYear());
+}
+
 function getMovieById(id){
   return MOVIES.find(m => m.id === id);
 }
@@ -30,25 +49,6 @@ function movieCard(movie){
 
 function renderGrid(el, movies){
   el.innerHTML = movies.map(movieCard).join("");
-}
-
-function escapeHtml(str){
-  return String(str)
-    .replaceAll("&","&")
-    .replaceAll("<","<")
-    .replaceAll(">",">")
-    .replaceAll('"',""")
-    .replaceAll("'","&#039;");
-}
-
-function qs(name){
-  const url = new URL(window.location.href);
-  return url.searchParams.get(name);
-}
-
-function initYear(){
-  const el = document.getElementById("year");
-  if(el) el.textContent = String(new Date().getFullYear());
 }
 
 function initHome(){
@@ -90,7 +90,6 @@ function initCatalog(){
 
   search.addEventListener("input", apply);
   genre.addEventListener("change", apply);
-
   apply();
 }
 
