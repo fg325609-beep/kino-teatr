@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KinoHub | Kino</title>
+  <meta name="description" content="Kino haqida batafsil ma'lumot." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>KinoHub</span>
+      </a>
+      <nav class="menu" aria-label="Menu">
+        <a href="catalog.html">Katalog</a>
+        <a href="signup.html">Ro‘yxatdan o‘tish</a>
+      </nav>
+      <a class="btn secondary" href="catalog.html">Orqaga</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card" id="movieBox">
+        <div class="pill"><span class="dot"></span> Kino sahifasi</div>
+        <h1 id="movieTitle" style="margin-top:12px">Yuklanmoqda...</h1>
+
+        <div id="movieMeta" class="toolbar" style="margin-top:10px"></div>
+        <div class="hr"></div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; align-items:start">
+          <div>
+            <div id="moviePoster" class="poster" style="height:260px; border-radius:16px; border:1px solid rgba(36,49,85,.65)"></div>
+          </div>
+
+          <div>
+            <div style="font-weight:950; font-size:16px">Tavsif</div>
+            <p id="movieDesc" class="help" style="margin-top:8px"></p>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px">
+              <button id="trailerBtn" class="btn" type="button">Trailer</button>
+              <button id="favBtn" class="btn secondary" type="button">♡ Sevimlilar</button>
+            </div>
+
+            <div id="toast" class="toast"></div>
+          </div>
+        </div>
+
+        <div id="trailerBox" style="display:none; margin-top:14px">
+          <div class="video">
+            <iframe id="trailerFrame"
+              src=""
+              title="Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <div>© <span id="year"></span> KinoHub.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

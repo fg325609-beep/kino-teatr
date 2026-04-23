@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KinoHub | Katalog</title>
-  <meta name="description" content="Kinolar katalogi. Qidiruv va genre filter." />
+  <title>KinoHub | Ro‘yxatdan o‘tish</title>
+  <meta name="description" content="Ro‘yxatdan o‘tish sahifasi." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,20 +24,22 @@
 
   <main class="container">
     <section class="section">
-      <div class="card">
-        <div class="section-title">
-          <h2>Kino katalogi</h2>
-          <span id="resultCount" class="small"></span>
-        </div>
+      <div class="card" style="max-width:520px; margin:0 auto">
+        <div class="pill"><span class="dot"></span> Account yaratish</div>
+        <h1 style="margin-top:12px">Ro‘yxatdan o‘ting</h1>
+        <p class="help">Bu demo. Keyin backend ulab login qilamiz.</p>
 
-        <div class="toolbar">
-          <input id="searchInput" class="input" placeholder="Kino nomi bo‘yicha qidiring..." />
-          <select id="genreSelect" aria-label="Genre select"></select>
-          <a class="btn" href="signup.html">Account</a>
-        </div>
+        <form id="signupForm" class="form">
+          <input class="input" name="name" placeholder="Ism" required />
+          <input class="input" name="email" placeholder="Email" required />
+          <input class="input" name="password" placeholder="Parol (min 6)" type="password" required />
+          <button class="btn" type="submit">Yaratish</button>
+        </form>
+
+        <div id="toast" class="toast"></div>
 
         <div class="hr"></div>
-        <div id="catalogGrid" class="grid"></div>
+        <div class="help">Keyingi bosqich: login, profil, sevimlilarni serverda saqlash.</div>
       </div>
     </section>
 

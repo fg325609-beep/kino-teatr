@@ -25,24 +25,26 @@
   <main class="container">
     <section class="hero">
       <div class="card">
-        <div class="pill"><span class="dot"></span> Kino platforma demo (4 page)</div>
-        <h1>Kinolarni tez toping, saralang, ko‘ring.</h1>
-        <p class="lead">Katalog, kino details sahifasi, va ro‘yxatdan o‘tish formasi. Hammasi responsive.</p>
+        <div class="pill"><span class="dot"></span> 4 ta page: Home, Catalog, Movie, Sign up</div>
+        <h1>Kino sayti. Poster, trailer, search, sevimlilar.</h1>
+        <p class="lead">Katalogda qidiruv va genre filter bor. Movie page’da trailer (YouTube embed) ochiladi.</p>
+
         <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap">
           <a class="btn" href="catalog.html">Katalogga o‘tish</a>
           <a class="btn secondary" href="signup.html">Account ochish</a>
         </div>
+
         <div class="hr"></div>
         <div class="toolbar">
           <span class="badge">🔎 Search</span>
-          <span class="badge">🎬 Details</span>
-          <span class="badge">🔐 Signup</span>
+          <span class="badge">🎬 Trailer</span>
+          <span class="badge">♥ Sevimlilar</span>
         </div>
       </div>
 
       <div class="card">
-        <div style="font-weight:950; font-size:16px">Tez navigatsiya</div>
-        <p class="help" style="margin-top:8px">Catalog’da qidiruv va genre filter bor.</p>
+        <div style="font-weight:950; font-size:16px">Tez yo‘l</div>
+        <p class="help" style="margin-top:8px">Bitta kinoni bosib details sahifasiga o‘tasiz.</p>
         <div class="hr"></div>
         <a class="btn" href="catalog.html" style="width:100%">Top kinolar</a>
       </div>
@@ -66,7 +68,62 @@
 
     <footer class="footer">
       <div class="hr"></div>
-      <div>© <span id="year"></span> KinoHub. Demo frontend.</div>
+      <div>© <span id="year"></span> KinoHub.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+4) catalog.html (2-page: Katalog)
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KinoHub | Katalog</title>
+  <meta name="description" content="Kinolar katalogi. Qidiruv va genre filter." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>KinoHub</span>
+      </a>
+      <nav class="menu" aria-label="Menu">
+        <a href="catalog.html">Katalog</a>
+        <a href="signup.html">Ro‘yxatdan o‘tish</a>
+      </nav>
+      <a class="btn secondary" href="index.html">Asosiy</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card">
+        <div class="section-title">
+          <h2>Kino katalogi</h2>
+          <span id="resultCount" class="small"></span>
+        </div>
+
+        <div class="toolbar">
+          <input id="searchInput" class="input" placeholder="Kino nomi bo‘yicha qidiring..." />
+          <select id="genreSelect" aria-label="Genre select"></select>
+          <a class="btn" href="signup.html">Account</a>
+        </div>
+
+        <div class="hr"></div>
+        <div id="catalogGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="hr"></div>
+      <div>© <span id="year"></span> KinoHub.</div>
     </footer>
   </main>
 
